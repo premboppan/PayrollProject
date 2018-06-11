@@ -9,6 +9,7 @@ package payrollproject;
  *
  * @author macstudent
  */
-public class CommisionedBasedPartTime {
+public class CommisionedBasedPartTime extends IPrintable{
+    private int commisionpercent;
     
 }

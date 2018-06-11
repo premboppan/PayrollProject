@@ -9,6 +9,6 @@ package payrollproject;
  *
  * @author macstudent
  */
-public class Car {
+public class Car extends Vehicle implements IPrintable{
     
 }

@@ -7,8 +7,8 @@ package payrollproject;
 
 /**
  *
- * @author macstudent
+ * @author ADMIN
  */
-public abstract class Vehicle implements IPrintable{
-    
+public interface IPrintable {
+    public void printMyData();
 }
