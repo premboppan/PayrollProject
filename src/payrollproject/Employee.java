@@ -9,6 +9,6 @@ package payrollproject;
  *
  * @author macstudent
  */
-public class Employee {
+public abstract class Employee implements IPrintable{
     
 }

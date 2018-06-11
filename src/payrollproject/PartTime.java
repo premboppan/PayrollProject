@@ -9,6 +9,16 @@ package payrollproject;
  *
  * @author macstudent
  */
-public class PartTime {
+public abstract class PartTime extends Employee implements IPrintable{
+    
+    private double rate;
+    private int hoursworked;
+    PartTime p;
+    
+    
+    
+    
+    
+    
     
 }
