@@ -11,4 +11,28 @@ package payrollproject;
  */
 public abstract class Vehicle implements IPrintable{
     
+    private int maxSpeed;
+    private String Color;
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public String getColor() {
+        return Color;
+    }
+
+    public void setColor(String Color) {
+        this.Color = Color;
+    }
+
+    public Vehicle(int maxSpeed, String Color) {
+        this.maxSpeed = maxSpeed;
+        this.Color = Color;
+    }
+    
 }
