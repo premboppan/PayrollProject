@@ -9,6 +9,14 @@ package payrollproject;
  *
  * @author macstudent
  */
-public class Motorcycle {
+public class Motorcycle extends Vehicle implements IPrintable{
+
     
+    
+    
+    
+    
+    @Override
+    public void printMyData() {
+       
 }
