@@ -12,9 +12,17 @@ package payrollproject;
 public abstract class Vehicle implements IPrintable{
     
     private int maxSpeed;
-    private String Color;
+    private String color;
+    private String make;
+    private String plate;
 
-    public int getMaxSpeed() {
+    public Vehicle(int maxSpeed, String Color,String make, String plate) {
+        this.maxSpeed = maxSpeed;
+        this.color = color;
+        this.make = make;
+        this.plate = plate;
+    }
+public int getMaxSpeed() {
         return maxSpeed;
     }
 
@@ -23,16 +31,32 @@ public abstract class Vehicle implements IPrintable{
     }
 
     public String getColor() {
-        return Color;
+        return color;
     }
 
     public void setColor(String Color) {
-        this.Color = Color;
+        this.color = Color;
     }
 
-    public Vehicle(int maxSpeed, String Color) {
-        this.maxSpeed = maxSpeed;
-        this.Color = Color;
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getPlate() {
+        return plate;
+    }
+
+    public void setPlate(String plate) {
+        this.plate = plate;
     }
     
+
+    
+    
+        
+       
 }
