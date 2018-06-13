@@ -11,6 +11,10 @@ package payrollproject;
  */
 public class Motorcycle extends Vehicle implements IPrintable{
 
+    public Motorcycle(int maxSpeed, String Color) {
+        super(maxSpeed, Color);
+    }
+
     
     
     
@@ -20,3 +24,5 @@ public class Motorcycle extends Vehicle implements IPrintable{
     public void printMyData() {
        
 }
+}
+

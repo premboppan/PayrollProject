@@ -11,6 +11,10 @@ package payrollproject;
  */
 public class Car extends Vehicle implements IPrintable{
 
+    public Car(int maxSpeed, String Color) {
+        super(maxSpeed, Color);
+    }
+
     @Override
     public void printMyData() {
         

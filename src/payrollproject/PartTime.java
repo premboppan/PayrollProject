@@ -15,6 +15,10 @@ public abstract class PartTime extends Employee implements IPrintable{
     private int hoursworked;
     PartTime p;
 
+    public PartTime(String name, int age, double earnings, Vehicle vehicle) {
+        super(name, age, earnings, vehicle);
+    }
+
     public double getRate() {
         return rate;
     }
@@ -34,6 +38,10 @@ public abstract class PartTime extends Employee implements IPrintable{
     public void settype()
     {
     }
+
+    double getHoursWorked() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
    }
     
@@ -45,4 +53,4 @@ public abstract class PartTime extends Employee implements IPrintable{
     
     
     
-}
+

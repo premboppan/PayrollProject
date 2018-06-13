@@ -9,7 +9,28 @@ package payrollproject;
  *
  * @author macstudent
  */
-public class CommisionedBasedPartTime extends IPrintable{
+public abstract class CommisionedBasedPartTime extends PartTime implements IPrintable{
     private int commisionpercent;
-    
+
+    public CommisionedBasedPartTime(String name, int age, double earnings, Vehicle vehicle) {
+        super(name, age, earnings, vehicle);
+    }
+    public double calEarnings() {
+		double ear;
+        ear = super.getRate() * super.getHoursWorked();
+        int commissionPercent = 0;
+		double com = ear*(commissionPercent/100);
+		return ear+com;
+//		return (super.getRate() * super.getHoursWorked())  
+	}
+
+	@Override
+	public void printMyData() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
+
+    
+
