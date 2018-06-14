@@ -12,15 +12,17 @@ package payrollproject;
 public class FullTime extends Employee implements IPrintable{
     private double salary;
     private double bonus;
-    
- public FullTime(double salary, double bonus, String name, int age, double earnings, Vehicle vehicle) {
+
+    public FullTime(String name, int age, double earnings, Vehicle vehicle) {
         super(name, age, earnings, vehicle);
-        this.salary = salary;
-        this.bonus = bonus;
-        
- }
-    public double getSalary(){
-         return salary;
+    }
+
+    public double calEarnings() {
+		return salary + bonus;
+	}
+    
+    public double getSalary() {
+        return salary;
     }
 
     public void setSalary(double salary) {
@@ -34,17 +36,17 @@ public class FullTime extends Employee implements IPrintable{
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
-
+    
     @Override
-    public void printMyData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-   
-    }
-    
-    
-    
-    
+	public void printMyData() {
+		System.out.println("Name : "+this.getName() +"\nYear of Birth : "+this.CalcBirthYear()
+		+"\nEmployee has a Car \n\tMake : "+getVehicle().getMake()+"\n\tRegistration Number : "+getVehicle().getPlate()
+		+"\n\tMaxSpeed : "+getVehicle().getMaxSpeed()+"\n\tColour : "+getVehicle().getColor()+"\nEmployee is FullTime\n\tSalary : "+this.salary
+		+"\n\tBonus : "+this.bonus+"\n\tEarnings : "+this.calEarnings());
+		
+	}
     
 }
+
+    
+
