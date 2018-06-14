@@ -34,5 +34,17 @@ public abstract class Vehicle implements IPrintable{
         this.maxSpeed = maxSpeed;
         this.Color = Color;
     }
+
+    String getMaker() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getRegPlate() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getTypeOfTransmission() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
