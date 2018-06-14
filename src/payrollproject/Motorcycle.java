@@ -9,37 +9,40 @@ package payrollproject;
  *
  * @author macstudent
  */
-public class Motorcycle extends Vehicle implements IPrintable{
-
-    public Motorcycle(int maxSpeed, String Color) {
-        super(maxSpeed, Color);
-    }
-    private String make;
-    private String plate;
+ public class Motorcycle extends Vehicle implements IPrintable {
+	
+	private String color;
+	private String MaxSpeed;
 
     public Motorcycle(int maxSpeed, String Color, String make, String plate) {
         super(maxSpeed, Color, make, plate);
     }
+	
+	
+	
+	public String getColor() { 
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
 
-    public String getMake() {
-        return make;
-    }
-
-    public void setMake(String make) {
-        this.make = make;
-    }
-
-    public String getPlate() {
-        return plate;
-    }
-
-    public void setPlate(String plate) {
-        this.plate = plate;
-    }
-    @Override
-    public void printMyData() {
+   
+    public String getmaxSpeed() {
+		return MaxSpeed;
+	}
+	public void setMaxSpeed(String MaxSpeed) {
+		this.MaxSpeed = MaxSpeed;
+	}
+	@Override
+	public void printMyData() {
+		
+		
+	}
+	
+	
 }
-}
 
-    }
-}
+
+    
+
