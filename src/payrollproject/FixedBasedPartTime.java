@@ -12,31 +12,38 @@ package payrollproject;
 public class FixedBasedPartTime extends PartTime implements IPrintable{
 	
 	private double fixedAmount;
+	static double ear;
 
     public FixedBasedPartTime(String name, int age, double earnings, Vehicle vehicle) {
         super(name, age, earnings, vehicle);
     }
 	
-	public double calcEarnings() {
-		
-		double ear = super.getRate() * super.getHoursWorked();
-		double com = ear*(fixedAmount/100);
+        public double calcEarnings() {
+		ear = this.getRate()*this.getHoursworked();
+		double com =fixedAmount;
 		return ear+com;
 	}
-
-	
 
 	public void setFixedAmount(double fixedAmount) {
 		this.fixedAmount = fixedAmount;
 	}
-
+        
+        public double getFixedAmount() {
+		return fixedAmount;
+	}
 
 
 	@Override
 	public void printMyData() {
-		// TODO Auto-generated method stub
-		
+	System.out.println("Name : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()+"\nEmployee has a MotorCycle\n\tMaker : "
+	+getVehicle().getMaker()+"\n\tLicense Plate : "+getVehicle().getPlate()+"\n\tMaxSpeed : "+getVehicle().getMaxSpeed()+"\n\tColour : "+getVehicle().getColor()
+	+"\nEmployee is PartTime / Fixed Amt\n\t Rate : "+this.getRate()+"\n\tHours Worked : "+this.getHoursworked()
+	+"\n\tFixed Amount : "+this.fixedAmount+"\n\tEarnings : "+this.calcEarnings()+"("+FixedBasedPartTime.ear+" + "+this.fixedAmount+")");	
 	}
+
+    private String calcBrithYear() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 	
 	
 }
