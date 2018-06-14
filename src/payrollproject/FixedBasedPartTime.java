@@ -35,8 +35,8 @@ public class FixedBasedPartTime extends PartTime implements IPrintable{
 
 	@Override
 	public void printMyData() {
-	System.out.println("Name : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()+"\nEmployee has a MotorCycle\n\tMaker : "
-	+getVehicle().getMaker()+"\n\tLicense Plate : "+getVehicle().getPlate()+"\n\tMaxSpeed : "+getVehicle().getMaxSpeed()+"\n\tColour : "+getVehicle().getColor()
+	System.out.println("Name : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()+"\nEmployee has a MotorCycle\n\tMake : "
+	+getVehicle().getMake()+"\n\tLicense Plate : "+getVehicle().getPlate()+"\n\tMaxSpeed : "+getVehicle().getMaxSpeed()+"\n\tColour : "+getVehicle().getColor()
 	+"\nEmployee is PartTime / Fixed Amt\n\t Rate : "+this.getRate()+"\n\tHours Worked : "+this.getHoursworked()
 	+"\n\tFixed Amount : "+this.fixedAmount+"\n\tEarnings : "+this.calcEarnings()+"("+FixedBasedPartTime.ear+" + "+this.fixedAmount+")");	
 	}
