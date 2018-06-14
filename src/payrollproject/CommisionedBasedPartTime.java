@@ -30,10 +30,10 @@ public class CommisionedBasedPartTime extends PartTime implements IPrintable{
 	}
 
 	@Override
-	public void printMyData() {
-            System.out.println("Name : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()+"\nEmployee has a Car\n\tMaker : "+getVehicle().getMaker()+"\n\tRegistration Number : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()+"\nEmployee has a Car\n\tMaker : "+getVehicle().getRegPlate()+"\n\tType of Transmission : "+getVehicle().getTypeOfTransmission()+"\n\tColour : "+getVehicle().getColor()+
-                    "\nEmployee is a PartTime / Commissioned\n\tRate : "+this.getRate()+"\n\tHours Worked : "+this.getHoursWorked()+
-                    "\n\tCommission : "+this.getCommissionPercent()+"%"+"\n\tEarnings : "+this.calEarnings()+"("+CommisionedBasedPartTime.ear+" + "+this.getCommissionPercent()+"%"+" of "+CommisionedBasedPartTime.ear+")");
+        public void printMyData() {
+      System.out.println("Name : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()+"\nEmployee has a Car\n\tMaker : "+getVehicle().getMaker()+"\n\tRegistration Number : "+this.getName()+"\nYear of Birth : "+this.calcBrithYear()+"\nEmployee has a Car\n\tMaker : "+getVehicle().getRegPlate()+"\n\tType of Transmission : "+getVehicle().getTypeOfTransmission()+"\n\tColour : "+getVehicle().getColor()+
+     "\nEmployee is a PartTime / Commissioned\n\tRate : "+this.getRate()+"\n\tHours Worked : "+this.getHoursWorked()+
+     "\n\tCommission : "+this.getCommissionPercent()+"%"+"\n\tEarnings : "+this.calEarnings()+"("+CommisionedBasedPartTime.ear+" + "+this.getCommissionPercent()+"%"+" of "+CommisionedBasedPartTime.ear+")");
 		
 	}
 
