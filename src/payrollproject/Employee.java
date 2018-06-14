@@ -55,5 +55,10 @@ public abstract class Employee implements IPrintable{
         this.vehicle = vehicle;
     }
 
-   
+   public int CalcBirthYear()
+   {
+       return 2018-age;
+       
+       
+   }
 }
