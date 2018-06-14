@@ -9,7 +9,17 @@ package payrollproject;
  *
  * @author macstudent
  */
+    public Car(int maxSpeed, String Color) {
+        super(maxSpeed, Color);
+    }
 
+    @Override
+    public void printMyData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
+    }
 public class Car extends Vehicle implements IPrintable {
 	
 	private String maxSpeed;
@@ -38,6 +48,4 @@ public class Car extends Vehicle implements IPrintable {
 		// TODO Auto-generated method stub
 		System.out.println(this.maxSpeed + "\n" + this.color);
 	}
-	
-	
-}
+	]

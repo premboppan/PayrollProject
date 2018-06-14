@@ -11,6 +11,9 @@ package payrollproject;
  */
 public class Motorcycle extends Vehicle implements IPrintable{
 
+    public Motorcycle(int maxSpeed, String Color) {
+        super(maxSpeed, Color);
+    }
     private String make;
     private String plate;
 
@@ -33,15 +36,10 @@ public class Motorcycle extends Vehicle implements IPrintable{
     public void setPlate(String plate) {
         this.plate = plate;
     }
-    
-            
-
-    
-    
-    
     @Override
     public void printMyData() {
-       
+}
+}
 
     }
 }
