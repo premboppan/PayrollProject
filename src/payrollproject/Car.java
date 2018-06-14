@@ -17,7 +17,9 @@ public class Car extends Vehicle implements IPrintable{
 
     @Override
     public void printMyData() {
-        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
     }
     
-}
