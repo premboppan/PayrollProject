@@ -14,8 +14,8 @@ public class FixedBasedPartTime extends PartTime implements IPrintable{
 	private double fixedAmount;
 	static double ear;
 
-    public FixedBasedPartTime(String name, int age, double earnings, Vehicle vehicle) {
-        super(name, age, earnings, vehicle);
+    public FixedBasedPartTime(){
+    
     }
 	
         public double calcEarnings() {

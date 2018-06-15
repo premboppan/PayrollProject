@@ -9,9 +9,9 @@ package payrollproject;
 public class Intern extends Employee implements IPrintable{
     private String schoolName;
 
-    public Intern(String name, int age, double earnings, Vehicle vehicle) {
-        super(name, age, earnings, vehicle);
+    public Intern(){
     }
+
 
     public String getSchoolName() {
         return schoolName;

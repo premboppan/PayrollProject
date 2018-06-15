@@ -13,8 +13,8 @@ public class Car extends Vehicle implements IPrintable {
 	private String maxSpeed;
 	private String color;
 
-    public Car(int maxSpeed, String Color, String make, String plate) {
-        super(maxSpeed, Color, make, plate);
+    public Car(){
+
     }
 	
 	
@@ -35,6 +35,11 @@ public class Car extends Vehicle implements IPrintable {
 	public void printMyData() {
 		
         }
+
+    void setMaxspeed(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+   
+    }
         
 
 }

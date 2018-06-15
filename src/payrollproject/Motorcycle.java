@@ -14,8 +14,7 @@ package payrollproject;
 	private String color;
 	private String MaxSpeed;
 
-    public Motorcycle(int maxSpeed, String Color, String make, String plate) {
-        super(maxSpeed, Color, make, plate);
+    public Motorcycle(){
     }
 	
 	
@@ -39,6 +38,10 @@ package payrollproject;
 		
 		
 	}
+
+    void setMaxspeed(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 	
 	
 }

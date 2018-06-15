@@ -16,11 +16,7 @@ public abstract class Vehicle implements IPrintable{
     private String make;
     private String plate;
 
-    public Vehicle(int maxSpeed, String Color,String make, String plate) {
-        this.maxSpeed = maxSpeed;
-        this.color = color;
-        this.make = make;
-        this.plate = plate;
+    public Vehicle(){
     }
 public int getMaxSpeed() {
         return maxSpeed;

@@ -11,8 +11,7 @@ public class CommisionedBasedPartTime extends PartTime implements IPrintable{
 	static double ear;
 	static double comm;
 
-    public CommisionedBasedPartTime(String name, int age, double earnings, Vehicle vehicle) {
-        super(name, age, earnings, vehicle);
+    public CommisionedBasedPartTime(){
     }
 	
 	public double getCommissionPercent() {
