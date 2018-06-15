@@ -15,8 +15,8 @@ public abstract class PartTime extends Employee implements IPrintable{
     private int hoursworked;
     PartTime p;
 
-    public PartTime(String name, int age, double earnings, Vehicle vehicle) {
-        super(name, age, earnings, vehicle);
+    public PartTime(){
+    
     }
 
     public double getRate() {

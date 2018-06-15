@@ -13,8 +13,7 @@ public class FullTime extends Employee implements IPrintable{
     private double salary;
     private double bonus;
 
-    public FullTime(String name, int age, double earnings, Vehicle vehicle) {
-        super(name, age, earnings, vehicle);
+    public FullTime(){
     }
 
     public double calEarnings() {
